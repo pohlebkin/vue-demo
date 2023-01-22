@@ -4,6 +4,8 @@ node_modules
 desktop.ini
 _1.vue
 _2.vue
+_3.vue
+_4.vue
 
 # local env files
 .env.local

@@ -1,7 +1,7 @@
 <template>
     <header>
         <img class="logo" src="@/assets/logo.png">
-        <div class="title">{{ MyTitle }}</div>
+        <div class="title">{{ TitleFull }}</div>
     </header>
 </template>
 
@@ -9,8 +9,22 @@
 export default{
     name: 'MyHeader',
     props: {
-        MyTitle: String
-    }
+        TitlePart1: {
+            type: String,
+            required: true,
+            default: 'строка по умолчанию',
+        },
+        TitlePart2: {
+            type: String,
+            required: true,
+            default: 'строка по умолчанию',
+        },
+    },
+    computed: {
+        TitleFull(){
+            return `${this.TitlePart1} ${this.TitlePart2}`;
+        },
+    },
 }
 </script>
 

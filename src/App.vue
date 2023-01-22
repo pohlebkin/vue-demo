@@ -1,5 +1,8 @@
 <template>
-    <MyHeader MyTitle="мой демо сайт по Vue 3" />
+    <MyHeader
+        TitlePart1="мой демо сайт"
+        TitlePart2="по Vue 3"
+    />
 </template>
 
 <script>
@@ -9,7 +12,7 @@ export default{
     name: 'App',
     components: {
         MyHeader
-    }
+    },
 }
 </script>
 
