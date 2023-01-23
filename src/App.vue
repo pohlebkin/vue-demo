@@ -3,6 +3,7 @@
         TitlePart1="мой демо сайт"
         TitlePart2="по Vue 3"
     />
+    <MyButton>111</MyButton>
 </template>
 
 <script>
@@ -11,7 +12,7 @@ import MyHeader from '@/components/MyHeader.vue';
 export default{
     name: 'App',
     components: {
-        MyHeader
+        MyHeader,
     },
 }
 </script>
