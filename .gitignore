@@ -2,6 +2,7 @@
 node_modules
 /dist
 desktop.ini
+_1.js
 _1.vue
 _2.vue
 _3.vue
