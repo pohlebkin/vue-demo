@@ -1,15 +1,21 @@
 <template>
-  <MyHeader TitlePart1="мой демо сайт" TitlePart2="по Vue 3" />
-  <MyButton>111</MyButton>
+  <PropsComputed
+    TitlePart1="эта секция пример использования props,"
+    TitlePart2="computed и картинок"
+  />
+
+  <ButtonUI style="margin-bottom: 40px">
+    эта кнопка пример глобально зарегситрированного компонента
+  </ButtonUI>
 </template>
 
 <script>
-import MyHeader from '@/components/MyHeader.vue'
+import PropsComputed from '@/components/PropsComputed.vue'
 
 export default {
   name: 'App',
   components: {
-    MyHeader,
+    PropsComputed,
   },
 }
 </script>
@@ -21,5 +27,9 @@ export default {
   padding: 0;
   font-family: Consolas;
   font-size: 24px;
+}
+
+body {
+  padding: 40px 20px;
 }
 </style>

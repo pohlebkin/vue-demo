@@ -1,11 +1,11 @@
 import {createApp} from 'vue'
 import App from '@/App.vue'
-import uis from '@/ui'
+import UIS from '@/UI'
 
 const app = createApp(App)
 
-uis.forEach((ui) => {
-  app.component(ui.name, ui)
+UIS.forEach((UI) => {
+  app.component(UI.name, UI)
 })
 
 app.mount('#app')
