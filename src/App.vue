@@ -1,4 +1,6 @@
 <template>
+  <EventClick />
+
   <PropsComputed
     TitlePart1="эта секция пример использования props,"
     TitlePart2="computed и картинок"
@@ -11,11 +13,13 @@
 
 <script>
 import PropsComputed from '@/components/PropsComputed.vue'
+import EventClick from '@/components/EventClick.vue'
 
 export default {
   name: 'App',
   components: {
     PropsComputed,
+    EventClick,
   },
 }
 </script>
@@ -31,5 +35,9 @@ export default {
 
 body {
   padding: 40px 20px;
+}
+
+p {
+  margin-bottom: 20px;
 }
 </style>
